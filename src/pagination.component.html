@@ -1,0 +1,17 @@
+<ul *ngIf="totalSize > 1" class="pagination">
+    <li *ngIf="previousItemValid && firstText" (click)="firstPage()">
+        <a [innerHTML]="firstText">First</a>
+    </li>
+    <li><a *ngIf="previousItemValid" (click)="previousPage(nextItem)" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span></a>
+    </li>
+    <li *ngFor="let pageNo of pageList" [ngClass]="{'active':selectedPageNo == pageNo}">
+        <a (click)="setCurrentPage(pageNo)">{{pageNo}}</a>
+    </li>
+    <li><a *ngIf="nextItemValid" (click)="nextPage(nextItem)" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span></a>
+    </li>
+    <li *ngIf="nextItemValid && lastText" (click)="lastPage()">
+        <a [innerHTML]="lastText">Last</a>
+    </li>
+</ul>

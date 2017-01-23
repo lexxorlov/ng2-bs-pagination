@@ -6,3 +6,6 @@ npm-debug.log
 **.d.ts
 **.js.map
 **.js
+
+# Webpack
+!webpack.config.js

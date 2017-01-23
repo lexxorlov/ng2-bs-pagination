@@ -90,3 +90,6 @@ export class TestPaginationComponent implements OnInit {
                last-text="Last">
 </ng-pagination>
 ```   
+
+### Todo
+- Implement webpack. It does not work yet. 

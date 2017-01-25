@@ -21,6 +21,26 @@ packages: {
 }
 ```
 
+### Settings   
+  * `[totalItems]` _- number_- 
+    Total items in a collection.
+  * `[currentPage]` _- number_ -
+    Current page. 
+  * `[pageSize]` _- number_ -
+    Items per page.
+  * `[pageChange]` _- EventEmitter_ -
+    Page change event.
+  * `[offset]` _- number_ -
+    Page items count from left and right side from current page item in the pagination.   
+  * `[previous-text]` _- string_ -
+    Previous button text.    
+  * `[next-text]` _- string_ -
+    Next button text.        
+  * `[first-text]` _- string_ -
+    First button text.
+  * `[last-text]` _- string_ -
+    Last button text.       
+    
 ### Usage
 ```javascript
 // Module file 
